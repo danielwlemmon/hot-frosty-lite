@@ -26,10 +26,10 @@ function Locations() {
     if (zipcode.length ==5) {
       
       API.getLatLong(zipcode).then(res =>{
-        setName(res.data.data[0].locality + ", " + res.data.data[0].region);
+        setName(res.locations[0].address.city + ", " + res.locations[0].address.state);
         let newLocation = {
-          latitude: (res.data.data[0].latitude.toString()), 
-          longitude: (res.data.data[0].longitude.toString()),
+          latitude: (res.locations[0].referencePosition.latitude.toString()), 
+          longitude: (res.locations[0].referencePosition.longitude.toString()),
           accuracy: 0
         };
         setLocation(newLocation);
