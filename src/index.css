@@ -2,25 +2,13 @@
 * {
   box-sizing: border-box;
 }
-
-html {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
-  background-image: url('../src/assets/pexels-erik-mclean-6275458.jpeg');
-  background-size: cover;
-
+  background: #7793ae !important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
 }
-
-
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
